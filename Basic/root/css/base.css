@@ -1,0 +1,30 @@
+.error {
+    color: #c00;
+}
+
+input {
+    border: 1px solid black;
+    width: 200px;
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+}
+
+#login {
+    width: auto;
+}
+
+fieldset {
+    border: 1px solid black;
+    width: 202px;
+}
+
+.submit {
+    text-align: right;
+}
+
+.error_message {
+    font-size: .8em;
+}

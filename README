@@ -1,0 +1,10 @@
+This repo has a basic test application using HTML::FormFu.
+
+In the master branch is a really basic Login form
+
+In the 'advanced' branch there is a more complicated login form that
+illustrates one way you can use the TT renderer in FormFu to achieve more
+complicated layouts.  In this particular example new templates are added to
+put error messages after the input tag rather than before, and support for
+help text to be stuck into an elements stash, and subsequently rendered
+adjacent to input boxes.
