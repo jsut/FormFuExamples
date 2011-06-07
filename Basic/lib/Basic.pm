@@ -41,6 +41,21 @@ __PACKAGE__->config(
     disable_component_resolution_regex_fallback => 1,
 );
 
+__PACKAGE__->config(
+    'Controller::HTML::FormFu' => {
+        constructor => {
+            tt_args => {
+                INCLUDE_PATH => [
+                    __PACKAGE__->path_to('root','fields'),
+                ],
+            },
+            config_file_path => [
+                __PACKAGE__->path_to('root','forms'),
+            ]
+        },
+    }
+);
+
 # Start the application
 __PACKAGE__->setup();
 

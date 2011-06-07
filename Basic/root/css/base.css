@@ -18,7 +18,7 @@ label {
 
 fieldset {
     border: 1px solid black;
-    width: 202px;
+    width: 232px;
 }
 
 .submit {
@@ -27,4 +27,23 @@ fieldset {
 
 .error_message {
     font-size: .8em;
+}
+
+.help {
+   display: inline;
+   position: relative;
+}
+
+.help_text {
+   display: none;
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   border: 1px solid black;
+   padding: 3px;
+   background-color: white;
+}
+
+.help:hover .help_text {
+   display: block;
 }

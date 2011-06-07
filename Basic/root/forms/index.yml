@@ -2,6 +2,7 @@
 action: /
 indicator: submit
 auto_fieldset: 1
+render_method: tt
 attributes:
   id: login_form
 
@@ -9,6 +10,10 @@ elements:
   - type: Text
     name: user
     label: Username
+    filename: input_error_after
+    field_filename: input_tag_help
+    stash:
+      help_text: your username!
     attributes:
       id: username
     constraints:
@@ -17,6 +22,10 @@ elements:
   - type: Password
     name: pass
     label: Password
+    filename: input_error_after
+    field_filename: input_tag_help
+    stash:
+      help_text: your password!
     attributes:
       id: password
     constraints:
